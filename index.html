@@ -10,17 +10,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>网址导航</title>
   <style>
+    @media screen and (max-width: 981px) {
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #F7F7F7;
+      background-image: url("https://api.uomg.com/api/rand.img2?sort=二次元&format=images");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
     }
-
+    @media screen and (min-width: 981px) {
+    html, body {
+      background-image: url("https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+    }
     .container {
-      background-color: #fff;
+      background-color:rgba(255,255,255,0.6);
 
     }
 
@@ -38,7 +49,7 @@
       display: flex;
       border-top: 1px solid #dfdfdf;
       padding: 20px 10px 0 10px;
-      /*justify-content: space-between;*/
+      justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -48,13 +59,12 @@
     }
 
     .item-block {
-      border: 1px solid #dfdfdf;
+      border: 2px solid #dfdfdf;
       flex-direction: column;
       height: 160px;
-      width: 24%;
+      width: 294px;
       margin-bottom: 20px;
       margin-right: 10px;
-
     }
     a:link{                       /* 超链接正常状态下的样式 */
       color: #000000;              /* 黑色 */
@@ -64,7 +74,6 @@
       color:#000000;                /* 黑色 */
       text-decoration:none;         /* 无下划线 */
     }
-
 
     .item-top {
       height: 80px;
@@ -78,7 +87,7 @@
 
     }
     .item-logo img {
-        width: 100%;
+        /*width: 100%;*/
         height: 100%;
 
     }
@@ -87,13 +96,27 @@
       flex-direction: column;
       width: 79%;
     }
-
+    
+    .footer{
+	  height: 30px;
+  	  line-height: 35px;
+	  position: fixed;
+	  bottom: 0;
+	  width: 100%;
+	  text-align: center;
+	  background-color:rgba(235,148,147,0.6);
+	  font-family: Arial;
+	  font-size: 17px;
+	  font-weight: bold;
+	  letter-spacing: 1px;
+    }
+    
     .item-bottom {
       height: 40px;
       justify-content: space-around;
       align-items: center;
       color: #888888;
-      background-color: #F7F7F7;
+      background-color:rgba(255,255,255,0.6);
       font-size: 13px;
     }
 
@@ -115,189 +138,128 @@
     }
   </style>
 </head>
+
 <body style="padding: 10px">
 <div class="container">
-  <div class="container-header">内部系统导航</div>
+  <div class="container-header">个人使用网站</div>
   <div class="container-body">
     <div class="item-block">
-      <a href="https://about.gitlab.com/" target="_blank" >
+      <a href="https://map.toytoy.vip/rdo/RDOMap/" target="_blank" >
       <div class="item-top">
-        <div class="item-logo"><img src="img/gitlab.png"></div>
+        <div class="item-logo"><img src="img/rdo.png"></div>
         <div class="item-body">
-          <span class="title">Gitlab系统</span>
-          <span class="notice">Gitlab内部代码仓库</span>
+          <span class="title">百科地图</span>
+          <span class="notice">荒野大镖客2动植物百科地图</span>
         </div>
       </div>
     </a>
         <div class="item-bottom">
-          <a href="https://docs.gitlab.com/ee/README.html" target="_blank">
-          <div>帮助文档</div>
+          <a href="https://github.com/jeanropke/RDOMap" target="_blank">
+          <div>出处</div>
         </a>
         </div>
     </div>
     <div class="item-block">
-      <a href="https://www.atlassian.com/" target="_blank" >
+      <a href="https://map.toytoy.vip/rdo/RDR2CollectorsMap/" target="_blank" >
       <div class="item-top">
-        <div class="item-logo"><img src="img/wiki.png"></div>
+        <div class="item-logo"><img src="img/rdo.png"></div>
         <div class="item-body">
-          <span class="title">WIKI系统</span>
-          <span class="notice">文档系统</span>
+          <span class="title">收藏家地图</span>
+          <span class="notice">荒野大镖客2收藏家地图</span>
         </div>
       </div>
     </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
+         <div class="item-bottom">
+          <a href="https://github.com/jeanropke/RDR2CollectorsMap" target="_blank">
+          <div>出处</div>
+        </a>
       </div>
     </div>
 
     <div class="item-block">
-       <a href="https://www.zentao.net/" target="_blank" >
+       <a href="https://www.toytoy.vip/" target="_blank" >
       <div class="item-top" >
-        <div class="item-logo"><img src="img/chandao.png"></div>
+        <div class="item-logo"><img src="img/blog.png"></div>
         <div class="item-body">
-          <span class="title">禅道系统</span>
-          <span class="notice">项目管理系统</span>
+          <span class="title">Blog</span>
+          <span class="notice">我的博客</span>
         </div>
       </div>
     </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
-      </a>
-      </div>
     </div>
 
     <div class="item-block">
-      <a href="https://www.openldap.org/" target="_blank" >
+      <a href="https://asf.zzzytd.top/" target="_blank" >
       <div class="item-top">
-        <div class="item-logo"><img src="img/ldap.svg"></div>
+        <div class="item-logo"><img src="img/asf.png"></div>
         <div class="item-body">
-          <span class="title">账户系统</span>
-          <span class="notice">LDAP账号统一管理系统</span>
+          <span class="title">ASF</span>
+          <span class="notice">ASF IPC控制</span>
         </div>
       </div>
     </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
-      </div>
     </div>
+
+    <div class="item-block">
+       <a href="https://rorisaikou.xyz/" target="_blank" >
+      <div class="item-top" >
+        <div class="item-logo"><img src="img/pixiv.png"></div>
+        <div class="item-body">
+          <span class="title">Pixiv</span>
+          <span class="notice">Pixiv镜像地址，<br><s>需要使用cookie登录</s><br>已经在服务器上登录了</span>
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="item-block">
+       <a href="http://status.toytoy.vip/" target="_blank" >
+      <div class="item-top" >
+        <div class="item-logo"><img src="img/Akkarin.png"></div>
+        <div class="item-body">
+          <span class="title">云探针</span>
+          <span class="notice">部分主用的服务器负载探针</span>
+        </div>
+      </div>
+    </a>
+    </div>
+    
+    <div class="item-block">
+       <a href="https://wz.toytoy.vip/" target="_blank" >
+      <div class="item-top" >
+        <div class="item-logo"><img src="img/wz.ico"></div>
+        <div class="item-body">
+          <span class="title">网站状态监控</span>
+          <span class="notice">搭建的一些网站状态监控，使用 UptimeRobot</span>
+        </div>
+      </div>
+     </a>
+        <div class="item-bottom">
+          <a href="https://github.com/yb/uptime-status" target="_blank">
+          <div>出处</div>
+        </a>
+        </div>
+    </div>
+
+    <div class="item-block">
+       <a href="http://mail.zzzytd.top/" target="_blank" >
+      <div class="item-top" >
+        <div class="item-logo"><img src="img/mail.png"></div>
+        <div class="item-body">
+          <span class="title">临时邮箱</span>
+          <span class="notice">使用Forsaken Mail搭建的临时邮箱只能接收邮件</span>
+        </div>
+      </div>
+    </a>
+    </div>
+
   </div>
 </div>
 
-
-<div class="container">
-  <div class="container-header">运维导航</div>
-  <div class="container-body">
-
-    <div class="item-block">
-      <a href="https://demo.spug.dev" target="_blank" >
-      <div class="item-top" >
-        <div class="item-logo"><img src="img/spug.png"></div>
-        <div class="item-body">
-          <span class="title">开源运维平台</span>
-          <span class="notice">Spug开源运维平台</span>
-        </div>
-      </div>
-    </a>
-      <div class="item-bottom">
-        <a href="https://github.com/openspug/spug" target="_blank">
-        <div>源码地址</div>
-      </a>
-      </div>
-    </div>
-
-      <div class="item-block">
-      <a href="https://github.com/openspug/spug" target="_blank" >
-      <div class="item-top" >
-        <div class="item-logo"><img src="img/github.png"></div>
-        <div class="item-body">
-          <span class="title">开源运维平台</span>
-          <span class="notice">Spug运维平台源码</span>
-        </div>
-      </div>
-    </a>
-      <div class="item-bottom">
-        <a href="https://spug.qbangmang.com/login" target="_blank">
-        <div>演示地址</div>
-      </a>
-      </div>
-    </div>
-
-
-    <div class="item-block">
-      <a href="https://grafana.com/" target="_blank">
-      <div class="item-top">
-        <div class="item-logo"><img src="img/grafana.png"></div>
-        <div class="item-body">
-          <span class="title">监控系统</span>
-          <span class="notice">Grafana 监控平台</span>
-        </div>
-      </div>
-    </a>
-        <div class="item-bottom">
-          <div>帮助文档</div>
-        </div>
-    </div>
-
-    <div class="item-block">
-      <a href="https://www.zabbix.com/" target="_blank">
-      <div class="item-top">
-        <div class="item-logo"><img src="img/zabbix.png"></div>
-        <div class="item-body">
-          <span class="title">监控报警</span>
-          <span class="notice">Zabbix监控报警平台</span>
-        </div>
-      </div>
-    </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
-      </div>
-    </div>
-
-    <div class="item-block">
-      <a href="https://jenkins.io/" target="_blank">
-      <div class="item-top" >
-        <div class="item-logo"><img src="img/jenkins.png"></div>
-        <div class="item-body">
-          <span class="title">发布系统</span>
-          <span class="notice">Jenkins发布系统</span>
-        </div>
-      </div>
-    </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
-      </div>
-    </div>
-
-    <div class="item-block">
-      <a href="http://www.jumpserver.org/" target="_blank">
-      <div class="item-top" >
-        <div class="item-logo"><img src="img/jumpserver.png"></div>
-        <div class="item-body">
-          <span class="title">跳板机系统</span>
-          <span class="notice">Jumpserver 跳板机系统</span>
-        </div>
-      </div>
-    </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
-      </div>
-    </div>
-
-    <div class="item-block">
-      <a href="http://yearning.io/" target="_blank">
-      <div class="item-top" >
-        <div class="item-logo"><img src="img/sql2.png"></div>
-        <div class="item-body">
-          <span class="title">数据库系统</span>
-          <span class="notice">数据库审核平台</span>
-        </div>
-      </div>
-    </a>
-      <div class="item-bottom">
-        <div>帮助文档</div>
-      </div>
-    </div>
-
+<div class="footer">
+    Copyright © by <a href="https://github.com/openspug/index" target="_blank" >openspug/index</a>
+    |||<a href="http://beian.miit.gov.cn/" target="_blank" >皖ICP备19005257号</a>
+</div>
 <!--     <div class="item-block">
       <div class="item-top">
         <div class="item-logo"><img src="img/sky.png"></div>
